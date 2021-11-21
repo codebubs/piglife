@@ -1,0 +1,128 @@
+* {
+    font-family: 'Comic Sans MS';
+}
+#div-space {
+    position: absolute;
+    height: 50px;
+    width: 30px;
+    left: 65px;
+    background-color: white;
+    float: left;
+}
+#piglife {
+    font-size: 50px;
+    border: none;
+    cursor: pointer;
+}
+#piglife-center {
+    text-align: center;
+}
+#piglife, #piglife::selection, #piglife-pig, #piglife-pig::selection, #piglife-life, #piglife-life::selection, .bar-button::selection {
+    background: none;
+    cursor: pointer;
+    outline: none;
+}
+#piglife-pig {
+    color: #00b7ff;
+}
+#piglife-life {
+    color: #ba03fc;
+}
+#shop-button {
+    margin-top: 15px;
+    color: #00b7ff;
+}
+#bar {
+    position: relative;
+    top: 5px;
+    height: 40px;
+    margin-top: 30px;
+    margin-left: 70px;
+    height: 50px;
+    background-color: #e0e0e0;
+    border-radius: 15px;
+}
+#playerarea {
+    background-color: #ebebeb;
+    margin-right: 60px;
+    margin-left: 100px;
+    height: 400px;
+    border-radius: 15px;
+}
+#piggygoldflag {
+    visibility: hidden;
+    margin-left: 50px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 11px;
+    color: #ba03fc;
+    font-weight: bolder;
+    cursor: default;
+}
+#piggygoldflag::selection {
+    background: none;
+}
+.playerinfo {
+    display: inline;
+    font-weight: 500;
+    font-size: 35px;
+}
+#coins, #piggycash {
+    font-size: 11px;
+    margin-bottom: 3px;
+    padding-bottom: none;
+}
+#coinsnum {
+    color: #bd9f19;
+}
+#coinsnum, #piggycashnum {
+    margin: 0;
+    padding-top: none;
+}
+#playerinfo {
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+#left-bar-playerarea {
+    position: relative;
+    margin-left: 100px;
+    height: 400px;
+    top: 50px;
+    width: 500px;
+    float: left;
+}
+#right-bar-playerarea {
+    position: relative;
+    top: 50px;
+    height: 400px;
+    float: left;
+}
+#goto {
+    margin-top: 120px;
+    margin-left: 50px;
+    font-size: large;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.bar-button {
+    outline: none;
+    border: none;
+    margin-left: 5px;
+    margin-top: 10px;
+    height: 30px;
+    background: none;
+    cursor: pointer;
+    font-size: 15px;
+    float: left;
+}
+.main-bar-button {
+    color: #ba03fc;
+}
+#shop-button:hover {
+    font-size: 18px;
+}

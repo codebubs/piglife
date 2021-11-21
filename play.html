@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" lang="en">
+        <title>Document</title>
+        <style>              
+            #canvas {
+                width: 400px;
+                height: 400px;
+                position: relative;
+                background-color: red;
+            }
+            .square {
+                width: 50px;
+                height: 50px;
+                position: absolute;
+                background-color: yellow;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="canvas">
+            <div class="square"></div>
+            <div class="square" style="margin-top: 100px;"></div>
+        </div>
+    </body>
+    <script>
+        /*
+        var ctx = c.getContext('2d');
+        ctx.beginPath();
+
+        var rect1x = 10;
+        var rect1y = 10;*/
+
+        
+        var square = document.getElementsByClassName('square');
+        var pos = [];
+        for(var i = 0; i < square.length; i++) {
+            pos.push([0, 0]);
+        }
+
+        function draw() {
+            for(var i = 0; i < square.length; i++) {
+                if(pos[i][0] < 400) {
+                    square[i].style.top = pos[i][0] + "px";
+                    pos[i][0] += 1;
+                }
+                if(pos[i][1] < 400) {
+                    square[i].style.left = pos[i][1] + "px";
+                    pos[i][1] += 1;
+                }
+            }
+            /*rect1x += 4;
+            rect1y += 4;
+            rect(rect1x, rect1y, 100, 100);
+            fill(rgb(250, 180, 0));
+            ctx.clearRect(0, 0, 1000, 1000);*/
+            requestAnimationFrame(draw);
+        }
+        
+        
+        /************************************/
+        /****** ALL DRAWING FUNCTIONS *******/
+        /************************************/
+        /*
+        function rect(x, y, width, height) {
+            ctx.rect(x, y, width, height);
+        }
+        function fill(color) {
+            ctx.fillStyle = color;
+            ctx.fill();
+        }
+        function rgb(red, green, blue) {
+            return `rgb(${red}, ${green}, ${blue}`;
+        }*/
+        draw();
+    </script>
+</html>

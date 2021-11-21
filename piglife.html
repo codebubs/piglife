@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" lang="en">
+        <link rel="icon" href="https://cdn.clipart.email/ac885bc5d42834c54ca48b44ce410ea3_piggy-face-clipart_612-612.jpeg">
+        <link rel="stylesheet" href="./piglife.css">
+        <title>PigLife</title>
+    </head>
+    <body>
+        <div id="piglife-center">
+            <button id="piglife">
+                <span id="piglife-pig">Pig</span><!--
+             --><span id="piglife-life">Life</span>
+            </button>
+        </div>
+        <!--
+        <a href="https://google.com">Sign Up</a>
+        <a href="https://google.com">Sign In</a>
+        -->
+        <div id="buttons">
+            <button id="shop-button" class="bar-button">Shop</button>
+            <div id="bar">
+                <button id="pong-button" class="bar-button main-bar-button">Pong</button>
+            </div>
+        </div>
+        <br>
+        <br>
+        <p id="piggygoldflag"></p>
+        <div id="playerarea">
+            <div id="left-bar-playerarea">
+                <button id="playerinfo">
+                    <h1 id="team" class="playerinfo"></h1>
+                    <h1 id="playername" class="playerinfo"></h1>
+                    <p id="title"></p>
+                </button>
+                <br><br><br><br>
+                <p id="coins">TOKENS</p>
+                <p id="coinsnum"></p>
+                <br>
+                <p id="piggycash">PIGGY CASH</p>
+                <p id="piggycashnum"></p>
+            </div>
+            <div id="right-bar-playerarea">
+                <button id="goto">My pig: </button>
+            </div>
+        </div>
+    </body>
+    <script src="./piglife.js"></script>
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.658.0.min.js"></script>
+    <script src="./piglifebackend.js"></script>
+</html>
